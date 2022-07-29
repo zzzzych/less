@@ -111,7 +111,7 @@ button {
   outline: 0;
 }
 textarea {
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   background-color: transparent;
   resize: none;
 }
