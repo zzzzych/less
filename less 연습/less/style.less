@@ -1,0 +1,34 @@
+// 변수
+@main-color: #6dc5ff;
+@border-color: rgb(214, 214, 214);
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-size: 16px;
+    line-height: 1;
+}
+.wrap {
+    width: 100%;
+    height: 100%;
+    .header {
+        padding: 10px 0;
+        border-bottom: 1px solid @border-color;
+        display: flex;
+        .gnb {
+            display: flex;
+            .gnb-link {
+                &:hover {
+                    
+                }
+                .gnb-sub {
+                    display: none;
+                }
+            }
+        }
+    }
+}
