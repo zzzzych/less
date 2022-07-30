@@ -10,6 +10,8 @@
 :root {
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
   overflow-wrap: break-word;
   word-break: break-word;
@@ -112,6 +114,7 @@ button {
 }
 textarea {
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   background-color: transparent;
   resize: none;
 }
