@@ -19,14 +19,43 @@ body {
         padding: 10px 0;
         border-bottom: 1px solid @border-color;
         display: flex;
-        .gnb {
-            display: flex;
-            .gnb-link {
-                &:hover {
-                    
-                }
-                .gnb-sub {
-                    display: none;
+        gap:50px;
+        overflow:hidden;
+        height:0;
+        min-height:37px;
+        transition:all ease 0.4s;
+        &:hover {
+            height:120px;
+        }
+        .logo {
+            padding:0 10px;
+        }
+        .nav {
+            flex-grow: 1;
+            .gnb {
+                display:flex;
+                .gnb-link {
+                    .title {
+                        cursor: pointer;
+                        min-height:37px;
+                        &:hover {
+                            color:chocolate;
+                        }
+                        &.active {
+                            color:chocolate
+                        }
+                    }
+                    .gnb-sub {
+                        display:flex;
+                        flex-direction: column;
+                        gap:10px;
+                        .gnb-sub-link {
+                            cursor: pointer;
+                            &:hover {
+                                color:chocolate;
+                            }
+                        }
+                    }
                 }
             }
         }
